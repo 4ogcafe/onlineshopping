@@ -1,0 +1,51 @@
+
+
+*{margin:0;padding: 0;}
+
+
+@keyframes slider{
+  0%{
+    top:0px;
+    left:0px;
+  }
+
+  100%{
+    top:0px;
+    left:-2500px;
+  }
+}
+.sliderBox{
+
+  width:1024px;
+
+  height:350px;
+  border:1px solid #000;
+
+
+  overflow:hidden;
+  position:fixed;
+  margin-top:auto;
+
+
+  left: 50%;
+  margin-left: -512px;
+}
+
+.sliderBox ul{
+
+  width: 3500px;
+  height: 165px;
+  list-style-type: none;
+  position: absolute;
+  animation-name: slider;
+
+  animation-duration: 25s;
+
+  animation-iteration-count: infinite;
+
+  animation-timing-function: linear;
+}
+
+.sliderBox ul li{
+  float: left;
+}
